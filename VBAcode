@@ -1,0 +1,13 @@
+'export to PDF
+    Dim fp As String
+    Dim wb As Worksheet
+
+    fp = "C:" 'put your filepath here
+    Set wb = ActiveSheet
+
+    wb.ExportAsFixedFormat Type:=xlTypePDF, _
+                       Filename:=fp, _
+                       Quality:=xlQualityStandard, _
+                       IncludeDocProperties:=True, _
+                       IgnorePrintAreas:=False, _
+                       OpenAfterPublish:=True '
